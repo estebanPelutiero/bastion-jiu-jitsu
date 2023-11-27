@@ -142,7 +142,7 @@ const Nav = () => {
 
   return (
     <div className="z-50 fixed top-0 w-full bg-black/30 backdrop-blur-lg">
-      <Navbar className="mx-auto max-w-[1120px] shadow-none px-4 md:px-8 py-0 lg:px-0 border-none bg-transparent">
+      <nav className="mx-auto max-w-[1120px] shadow-none px-4 md:px-8 py-0 lg:px-0 border-none">
         <div className="flex items-center justify-between py-2">
           <Typography
             as="a"
@@ -186,7 +186,7 @@ const Nav = () => {
         <Collapse open={openNav}>
           <NavList />
         </Collapse>
-      </Navbar>
+      </nav>
     </div>
   );
 };
