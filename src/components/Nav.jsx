@@ -13,12 +13,12 @@ import Logo from "../assets/svgs/Logo.svg";
 
 const NavList = () => {
   return (
-    <ul className="z-10 mt-6 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 text-black">
+    <ul className="z-10 mt-6 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
       <Typography
         as="li"
         variant="small"
         color="blue-gray"
-        className="flex justify-end lg:px-4 py-2 border-b-[1px] lg:border-none"
+        className="flex justify-end lg:px-4 py-3 border-b-[1px] border-gray/30 lg:border-none"
       >
         <Link
           activeClass="active"
@@ -27,7 +27,7 @@ const NavList = () => {
           to="home"
           duration={1300}
           offset={-80}
-          className="cursor-pointer flex items-center font-urbanist font-medium text-lg tracking-wider transition-colors"
+          className="cursor-pointer flex items-center font-poppins text-gray font-normal text-base transition-colors"
         >
           Home
         </Link>
@@ -36,7 +36,7 @@ const NavList = () => {
         as="li"
         variant="small"
         color="blue-gray"
-        className="flex justify-end lg:px-4 py-2 border-b-[1px] lg:border-none"
+        className="flex justify-end lg:px-4 py-3 border-b-[1px] border-gray/30 lg:border-none"
       >
         <Link
           activeClass="active"
@@ -45,25 +45,7 @@ const NavList = () => {
           to="servicios"
           duration={1300}
           offset={-100}
-          className="cursor-pointer flex items-center font-urbanist font-medium text-lg tracking-wider transition-colors"
-        >
-          Nuestros servicios
-        </Link>
-      </Typography>
-      <Typography
-        as="li"
-        variant="small"
-        color="blue-gray"
-        className="flex justify-end lg:px-4 py-2 border-b-[1px] lg:border-none"
-      >
-        <Link
-          activeClass="active"
-          smooth={true}
-          spy={true}
-          to="nosotros"
-          duration={1300}
-          offset={-100}
-          className="cursor-pointer flex items-center font-urbanist font-medium text-lg tracking-wider transition-colors"
+          className="cursor-pointer flex items-center font-poppins text-gray font-normal text-base transition-colors"
         >
           Nosotros
         </Link>
@@ -72,7 +54,61 @@ const NavList = () => {
         as="li"
         variant="small"
         color="blue-gray"
-        className="flex justify-end lg:pl-4 pt-2 pb-1 lg:pb-2"
+        className="flex justify-end lg:px-4 py-3 border-b-[1px] border-gray/30 lg:border-none"
+      >
+        <Link
+          activeClass="active"
+          smooth={true}
+          spy={true}
+          to="nosotros"
+          duration={1300}
+          offset={-100}
+          className="cursor-pointer flex items-center font-poppins text-gray font-normal text-base transition-colors"
+        >
+          Clases
+        </Link>
+      </Typography>
+      <Typography
+        as="li"
+        variant="small"
+        color="blue-gray"
+        className="flex justify-end lg:px-4 py-3 border-b-[1px] border-gray/30 lg:border-none"
+      >
+        <Link
+          activeClass="active"
+          smooth={true}
+          spy={true}
+          to="profesores"
+          duration={1300}
+          offset={-100}
+          className="cursor-pointer flex items-center font-poppins text-gray font-normal text-base transition-colors"
+        >
+          Profesores
+        </Link>
+      </Typography>
+      <Typography
+        as="li"
+        variant="small"
+        color="blue-gray"
+        className="flex justify-end lg:px-4 py-3 border-b-[1px] border-gray/30 lg:border-none"
+      >
+        <Link
+          activeClass="active"
+          smooth={true}
+          spy={true}
+          to="torneos"
+          duration={1300}
+          offset={-100}
+          className="cursor-pointer flex items-center font-poppins text-gray font-normal text-base transition-colors"
+        >
+          Torneos
+        </Link>
+      </Typography>
+      <Typography
+        as="li"
+        variant="small"
+        color="blue-gray"
+        className="flex justify-end lg:pl-4 lg:py-3 pt-3 pb-4"
       >
         <Link
           activeClass="active"
@@ -81,7 +117,7 @@ const NavList = () => {
           to="contacto"
           duration={1300}
           offset={-100}
-          className="cursor-pointer flex items-center font-urbanist font-medium text-lg tracking-wider transition-colors"
+          className="cursor-pointer flex items-center font-poppins text-gray font-normal text-base transition-colors"
         >
           Contacto
         </Link>
@@ -105,16 +141,16 @@ const Nav = () => {
   }, []);
 
   return (
-    <div className="z-50 fixed top-0 w-full shadow-md bg-white">
-      <Navbar className="mx-auto max-w-[1120px] shadow-none px-4 md:px-8 py-0 lg:px-0 border-none">
-        <div className="flex items-center justify-between">
+    <div className="z-50 fixed top-0 w-full bg-black/30 backdrop-blur-lg">
+      <Navbar className="mx-auto max-w-[1120px] shadow-none px-4 md:px-8 py-0 lg:px-0 border-none bg-transparent">
+        <div className="flex items-center justify-between py-2">
           <Typography
             as="a"
             href="#"
             variant="h6"
             className="mr-4 cursor-pointer"
           >
-            <div className="">
+            <div>
               <Link
               to="home"
               smooth={true}
@@ -123,10 +159,10 @@ const Nav = () => {
               duration={1300}
               >
                 <img
-                  className="w-12 lg:w-20 m-1"
+                  className="w-16"
                   src={Logo}
                   loading="lazy"
-                  alt="Clear & Garden | Servicios integrales de limpieza"
+                  alt="Bastión Jiu Jitsu"
                 />
               </Link>
             </div>
@@ -141,9 +177,9 @@ const Nav = () => {
             onClick={() => setOpenNav(!openNav)}
           >
             {openNav ? (
-              <XMarkIcon className="w-7 text-black" strokeWidth={1.5} />
+              <XMarkIcon className="w-7 text-gray" strokeWidth={1.5} />
             ) : (
-              <Bars3Icon className="w-7 text-black" strokeWidth={1.5} />
+              <Bars3Icon className="w-7 text-gray" strokeWidth={1.5} />
             )}
           </IconButton>
         </div>

@@ -7,6 +7,16 @@ export default withMT( {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    fontFamily: {
+      'poppins': ["Poppins", "sans-serif"]
+    },
+    colors: {
+      transparent: 'transparent',
+      current: 'currentColor',
+      'black': '#0F0E0E',
+      'orange': '#E55812',
+      'gray': '#C4CBCA'
+    }, 
     extend: {},
   },
   plugins: [],
