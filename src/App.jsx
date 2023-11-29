@@ -2,6 +2,7 @@ import React from 'react'
 import './App.css'
 import Nav from './components/Nav'
 import Hero from './components/Hero'
+import Classes from './components/Classes'
 
 function App() {
 
@@ -9,6 +10,7 @@ function App() {
     <>
       <Nav />
       <Hero />
+      <Classes />
     </>
   )
 }

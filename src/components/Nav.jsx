@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-scroll";
 
 import {
-  Navbar,
   Collapse,
   Typography,
   IconButton,
@@ -26,7 +25,6 @@ const NavList = () => {
           spy={true}
           to="home"
           duration={1300}
-          offset={-80}
           className="cursor-pointer flex items-center font-poppins text-gray font-normal text-base transition-colors"
         >
           Home
@@ -42,27 +40,8 @@ const NavList = () => {
           activeClass="active"
           smooth={true}
           spy={true}
-          to="servicios"
+          to="clases"
           duration={1300}
-          offset={-100}
-          className="cursor-pointer flex items-center font-poppins text-gray font-normal text-base transition-colors"
-        >
-          Nosotros
-        </Link>
-      </Typography>
-      <Typography
-        as="li"
-        variant="small"
-        color="blue-gray"
-        className="flex justify-end lg:px-4 py-3 border-b-[1px] border-gray/30 lg:border-none"
-      >
-        <Link
-          activeClass="active"
-          smooth={true}
-          spy={true}
-          to="nosotros"
-          duration={1300}
-          offset={-100}
           className="cursor-pointer flex items-center font-poppins text-gray font-normal text-base transition-colors"
         >
           Clases
@@ -78,9 +57,25 @@ const NavList = () => {
           activeClass="active"
           smooth={true}
           spy={true}
+          to="servicios"
+          duration={1300}
+          className="cursor-pointer flex items-center font-poppins text-gray font-normal text-base transition-colors"
+        >
+          Nosotros
+        </Link>
+      </Typography>
+      <Typography
+        as="li"
+        variant="small"
+        color="blue-gray"
+        className="flex justify-end lg:px-4 py-3 border-b-[1px] border-gray/30 lg:border-none"
+      >
+        <Link
+          activeClass="active"
+          smooth={true}
+          spy={true}
           to="profesores"
           duration={1300}
-          offset={-100}
           className="cursor-pointer flex items-center font-poppins text-gray font-normal text-base transition-colors"
         >
           Profesores
@@ -98,7 +93,6 @@ const NavList = () => {
           spy={true}
           to="torneos"
           duration={1300}
-          offset={-100}
           className="cursor-pointer flex items-center font-poppins text-gray font-normal text-base transition-colors"
         >
           Torneos
@@ -116,7 +110,6 @@ const NavList = () => {
           spy={true}
           to="contacto"
           duration={1300}
-          offset={-100}
           className="cursor-pointer flex items-center font-poppins text-gray font-normal text-base transition-colors"
         >
           Contacto
@@ -141,7 +134,7 @@ const Nav = () => {
   }, []);
 
   return (
-    <div className="z-50 fixed top-0 w-full bg-black/30 backdrop-blur-lg">
+    <div className="z-50 fixed top-0 w-full bg-black/40 backdrop-blur-lg">
       <nav className="mx-auto max-w-[1120px] shadow-none px-4 md:px-8 py-0 lg:px-0 border-none">
         <div className="flex items-center justify-between py-2">
           <Typography
