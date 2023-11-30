@@ -3,6 +3,7 @@ import './App.css'
 import Nav from './components/Nav'
 import Hero from './components/Hero'
 import Classes from './components/Classes'
+import About from './components/About'
 
 function App() {
 
@@ -11,6 +12,7 @@ function App() {
       <Nav />
       <Hero />
       <Classes />
+      <About /> 
     </>
   )
 }

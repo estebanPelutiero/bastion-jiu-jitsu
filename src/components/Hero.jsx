@@ -1,12 +1,13 @@
-import { Button } from '@material-tailwind/react';
 import React from 'react';
+import { Button } from '@material-tailwind/react';
 import { Link } from "react-scroll";
+import Layout from './Layout';
 
 const Hero = () => {
   return (
-    <div id='home' className="bg-[url('./assets/images/heroPic.webp')] bg-cover bg-center z-[-1] h-[100vh]">
+    <div className="bg-[url('./assets/images/heroPic.webp')] bg-cover bg-center z-[-1] h-[100vh]">
       <div className="overflow-x-hidden absolute z-0 w-full h-[100vh] backdrop-brightness-[.5]"></div>
-      <section className="relative z-10 h-full flex items-center mx-auto pt-24 px-4 md:px-8 lg:px-0 lg:max-w-[1120px]">
+      <Layout id={'home'} className="relative z-10 flex items-center">
           <div className="w-[90%] md:w-[60%] lg:w-[40%]">
             <div className="mb-6">
               <h1 className="text-orange text-6xl md:text-8xl font-semibold">
@@ -37,7 +38,7 @@ const Hero = () => {
               </Link>
             </div>
           </div>
-      </section>
+      </Layout>
     </div>
   )
 }

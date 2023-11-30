@@ -1,21 +1,18 @@
 import React from "react";
 import Layout from "./Layout";
+import Header from "./header/Header";
 import CardClasses from "./material-tailwind/CardClasses";
-import blob from "../assets/svgs/blob.svg";
-import Princi from "../assets/images/princi.jpg";
+import Principiante from "../assets/images/principiante.jpg";
 import Intermedio from "../assets/images/intermedio.jpg";
 import Avanzado from "../assets/images/avanzado.jpg";
 
 const Classes = () => {
   return (
-    <Layout className={"flex items-center justify-center"}>
-      <div id="clases" className="relative w-full">
-        <div className="z-20 relative text-gray text-6xl md:text-8xl font-medium pb-12 lg:pb-20">
-          <h2>Clases</h2>
-        </div>
+    <Layout id={'clases'} className={"flex flex-col items-start justify-center"}>
+        <Header title={'Clases'}/>
         <section className="z-20 relative flex flex-col lg:flex-row items-center justify-between gap-12 h-fit">
           <CardClasses
-            img={Princi}
+            img={Principiante}
             title={"Principiantes"}
             description={
               "Destinado a aquellos que quieran empezar sin experiencia previa"
@@ -32,7 +29,6 @@ const Classes = () => {
             description={"Programa preparativo para competiciones"}
           />
         </section>
-      </div>
     </Layout>
   );
 };

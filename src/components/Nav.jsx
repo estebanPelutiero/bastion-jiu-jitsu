@@ -57,7 +57,7 @@ const NavList = () => {
           activeClass="active"
           smooth={true}
           spy={true}
-          to="servicios"
+          to="about"
           duration={1300}
           className="cursor-pointer flex items-center font-poppins text-gray font-normal text-base transition-colors"
         >

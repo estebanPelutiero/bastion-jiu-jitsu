@@ -18,7 +18,7 @@ const CardClasses = ({ img, title, description }) => {
         />
       </CardHeader>
       <CardBody>
-        <Typography variant="h5" className="mb-2 text-white/90 font-poppins">
+        <Typography variant="h5" className="mb-2 text-white font-poppins">
           {title}
         </Typography>
         <Typography className="text-gray font-poppins">
@@ -26,7 +26,7 @@ const CardClasses = ({ img, title, description }) => {
         </Typography>
       </CardBody>
       <CardFooter className="pt-0">
-        <Button className="bg-orange/75 capitalize text-xs font-normal font-poppins rounded-md">Detalle</Button>
+        <Button className="bg-orange capitalize text-xs font-medium font-poppins rounded-md">Detalles</Button>
       </CardFooter>
     </Card>
   );
