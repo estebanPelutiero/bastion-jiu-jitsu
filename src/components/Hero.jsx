@@ -25,7 +25,7 @@ const Hero = () => {
               to="servicios"
               offset={-100}
               duration={1300}>
-                <Button className="text-base capitalize font-semibold tracking-wider text-white bg-orange px-8 py-2 lg:px-9 lg:py-[10px] rounded-lg shadow-lg">
+                <Button className="text-base font-poppins capitalize font-semibold tracking-wider text-white bg-orange px-8 py-2 lg:px-9 lg:py-[10px] rounded-lg shadow-lg">
                   <Link
                     smooth={true}
                     spy={true}

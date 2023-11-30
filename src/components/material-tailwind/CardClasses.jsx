@@ -26,7 +26,7 @@ const CardClasses = ({ img, title, description }) => {
         </Typography>
       </CardBody>
       <CardFooter className="pt-0">
-        <Button className="bg-orange/75 capitalize text-xs font-normal font-poppins rounded-md">Más info</Button>
+        <Button className="bg-orange/75 capitalize text-xs font-normal font-poppins rounded-md">Detalle</Button>
       </CardFooter>
     </Card>
   );
